@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="WINDOWS-1252" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/Jorge/Documents/signals/WekaBCI/releases/WekaBCI-1.0.1.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/WekaBCI/WekaBCI.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="true" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=WekaBCI/src&lt;wekabci.server{WekaServerTrayIcon.java[WekaServerTrayIcon" manifestLocation="/WekaBCI/WekaBCI.manifest" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=WekaBCI/src"/>
+        <file path="/WekaBCI/wekabci.server.WekaServer.log4j"/>
+        <file path="/WekaBCI/WekaServer.properties"/>
+    </selectedElements>
+</jardesc>

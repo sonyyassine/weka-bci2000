@@ -1,0 +1,94 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = operat.exe SignalGenerator.exe gUSBampSource.exe USBampgetinfo.exe \
+  gMOBIlab.exe ARSignalProcessing.exe FFTSignalProcessing.exe \
+  P3SignalProcessing.exe MatlabSignalProcessing.exe DummySignalProcessing.exe \
+  CursorTask.exe FeedbackDemo.exe StimulusPresentation.exe P3Speller.exe \
+  BCI2000Export.exe BCI2000FileInfo.exe BCI2000Viewer.exe BCI2000launcher.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+
+SignalGenerator.exe: core\SignalSource\SignalGenerator\SignalGenerator.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+gUSBampSource.exe: core\SignalSource\g.USBamp\gUSBampSource.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+gMOBIlab.exe: core\SignalSource\g.MOBIlab\gMOBIlab.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+operat.exe: core\Operator\operat.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+USBampgetinfo.exe: core\SignalSource\g.USBamp\getinfo\USBampgetinfo.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+ARSignalProcessing.exe: core\SignalProcessing\AR\ARSignalProcessing.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+FFTSignalProcessing.exe: core\SignalProcessing\FFT\FFTSignalProcessing.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+P3SignalProcessing.exe: core\SignalProcessing\P3\P3SignalProcessing.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+MatlabSignalProcessing.exe: core\SignalProcessing\Matlab\MatlabSignalProcessing.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+DummySignalProcessing.exe: core\SignalProcessing\Dummy\DummySignalProcessing.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+CursorTask.exe: core\Application\CursorTask\CursorTask.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+FeedbackDemo.exe: core\Application\FeedbackDemo\FeedbackDemo.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+StimulusPresentation.exe: core\Application\StimulusPresentation\StimulusPresentation.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+P3Speller.exe: core\Application\P3Speller\P3Speller.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+BCI2000Export.exe: core\Tools\BCI2000Export\BCI2000Export.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+BCI2000FileInfo.exe: core\Tools\BCI2000FileInfo\BCI2000FileInfo.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+BCI2000Viewer.exe: core\Tools\BCI2000Viewer\BCI2000Viewer.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+BCI2000launcher.exe: core\Tools\BCI2000Launcher\BCI2000launcher.bpr
+  $(ROOT)\bin\bpr2mak $**
+  $(ROOT)\bin\make -$(MAKEFLAGS) -f$*.mak
+
+
