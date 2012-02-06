@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: wekabci.server.WekaServerTrayIcon
+Class-Path: . lib/log4j-1.2.14.jar lib/weka.jar 
+

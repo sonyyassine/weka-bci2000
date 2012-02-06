@@ -1,0 +1,7 @@
+@relation 'Test00100-weka.filters.unsupervised.attribute.Remove-R1-26,28-37,39-44-weka.filters.unsupervised.instance.RemoveWithValues-S0.5-Clast-Lfirst-last'
+
+@attribute Channel3-Element5 numeric
+@attribute Channel4-Element5 numeric
+@attribute Class numeric
+
+@data

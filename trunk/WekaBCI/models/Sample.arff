@@ -1,0 +1,49 @@
+@relation Name00100-weka.filters.unsupervised.instance.RemoveWithValues-S0.5-Clast-Lfirst-last
+
+@attribute Channel1-Element1 numeric
+@attribute Channel1-Element2 numeric
+@attribute Channel1-Element3 numeric
+@attribute Channel1-Element4 numeric
+@attribute Channel1-Element5 numeric
+@attribute Channel1-Element6 numeric
+@attribute Channel1-Element7 numeric
+@attribute Channel1-Element8 numeric
+@attribute Channel1-Element9 numeric
+@attribute Channel1-Element10 numeric
+@attribute Channel1-Element11 numeric
+@attribute Channel2-Element1 numeric
+@attribute Channel2-Element2 numeric
+@attribute Channel2-Element3 numeric
+@attribute Channel2-Element4 numeric
+@attribute Channel2-Element5 numeric
+@attribute Channel2-Element6 numeric
+@attribute Channel2-Element7 numeric
+@attribute Channel2-Element8 numeric
+@attribute Channel2-Element9 numeric
+@attribute Channel2-Element10 numeric
+@attribute Channel2-Element11 numeric
+@attribute Channel3-Element1 numeric
+@attribute Channel3-Element2 numeric
+@attribute Channel3-Element3 numeric
+@attribute Channel3-Element4 numeric
+@attribute Channel3-Element5 numeric
+@attribute Channel3-Element6 numeric
+@attribute Channel3-Element7 numeric
+@attribute Channel3-Element8 numeric
+@attribute Channel3-Element9 numeric
+@attribute Channel3-Element10 numeric
+@attribute Channel3-Element11 numeric
+@attribute Channel4-Element1 numeric
+@attribute Channel4-Element2 numeric
+@attribute Channel4-Element3 numeric
+@attribute Channel4-Element4 numeric
+@attribute Channel4-Element5 numeric
+@attribute Channel4-Element6 numeric
+@attribute Channel4-Element7 numeric
+@attribute Channel4-Element8 numeric
+@attribute Channel4-Element9 numeric
+@attribute Channel4-Element10 numeric
+@attribute Channel4-Element11 numeric
+@attribute Class numeric
+
+@data
