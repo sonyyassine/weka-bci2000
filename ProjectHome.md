@@ -1,0 +1,1 @@
+Integrating Weka classification tool into BCI2000
